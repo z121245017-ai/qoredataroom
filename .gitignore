@@ -1,6 +1,7 @@
 # Dependencies & build outputs
 node_modules/
 web/dist/
+*.tsbuildinfo
 contracts/out/
 contracts/cache/
 contracts/broadcast/
