@@ -1,0 +1,17 @@
+# Dependencies & build outputs
+node_modules/
+web/dist/
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Local environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+*.log
+*.tmp
+docs/.qa-*.png
