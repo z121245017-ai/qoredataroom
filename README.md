@@ -6,6 +6,8 @@
 
 ![QoreDataRoom Cover](docs/cover-1920x1080.png)
 
+> **DevFest Project Page:** https://build.qorechain.io/p/qoredataroom · **Live App:** https://z121245017-ai.github.io/qoredataroom/ · **Demo Video (68.63s):** [docs/demo.mp4](https://raw.githubusercontent.com/z121245017-ai/qoredataroom/main/docs/demo.mp4) · **Verified QoreX Registration TX:** `3EFA7ADD94556A52D136C894042560178A52EB28AB4C9E3C92C14EFCD4828D30`
+
 ---
 
 ## Why QoreDataRoom?
