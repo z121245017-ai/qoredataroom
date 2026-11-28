@@ -145,6 +145,15 @@ flowchart TB
 
 ## 1-Command Local Reproduction
 
+### 1-Command Local Diana EVM (`9800`) Deployment & PQC Eviction Simulation (Judge Quick-Check)
+Boots an ephemeral Anvil Cancun EVM (`chainId 9800`), mounts `0x...0a01` (`pqcVerify`) and `0x...0a02` (`pqcKeyStatus`), broadcasts `DeployDiana.s.sol:DeployDiana`, verifies deployed `eth_getCode`, creates a PQC-gated deal room, anchors an Epoch 1 document, and executes an on-chain ML-DSA-87 `evictMemberWithPqcProof` rotation into Epoch 2 — zero wallet setup or faucet sign-in required:
+```bash
+cd web && npm run demo:local-chain
+# (or from repository root: node scripts/demo_local_chain.mjs)
+```
+
+> **Diana Testnet Faucet & EVM Window Note:** QoreChain's testnet faucet (`https://dashboard.qorechain.io/faucet`) requires interactive dashboard sign-in, and Diana's EVM ante handler requires a scoped `MsgOpenEVMWindow` signed by a PQC-registered QoreX wallet (`secp256k1 + ML-DSA-87`).
+
 ### Smart Contracts (Foundry)
 ```bash
 cd contracts && forge test -vv
